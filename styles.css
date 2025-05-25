@@ -1,6 +1,6 @@
 canvas {
   touch-action: none;
   width: 100%;
-  max-width: 800px;
-  height: 500px;
+  max-width: 2000px;
+  height: 2000px;
 }
