@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>在线画板</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="flex flex-col items-center bg-gray-100 min-h-screen p-4">
+  <h1 class="text-2xl font-bold mb-4">在线画板</h1>
+  <div class="mb-4 flex items-center gap-4">
+    <label for="pen-size" class="text-gray-700">笔粗细：</label>
+    <input type="range" id="pen-size" min="1" max="30" value="5" class="w-32" />
+    <button id="eraser" class="bg-red-500 text-white px-4 py-1 rounded hover:bg-red-600">擦除</button>
+    <button id="clear" class="bg-yellow-500 text-white px-4 py-1 rounded hover:bg-yellow-600">清空</button>
+  </div>
+  <canvas id="canvas" class="border bg-white rounded shadow-lg"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
